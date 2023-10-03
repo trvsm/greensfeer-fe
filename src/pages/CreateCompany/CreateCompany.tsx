@@ -166,7 +166,7 @@ const CreateCompany: React.FC = () => {
       banner,
     });
 
-    if (!required()) {
+    if (!required()) { // not proper validation; dropdowns set default as their string content
       setFormErrs("Please fill in all required fields");
       return;
     }
